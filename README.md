@@ -1,5 +1,5 @@
 # DockerFile
-
+*P1:
 1. FROM
 FROM <image> [AS <name>] : Chỉ định image nào sẽ làm base image để trong quá trình build image thực hiện câu lệnh tiếp theo. Các base image này sẽ được tải về từ Public or Private Repo riêng của mỗi người tùy theo setup
 2. RUN 
@@ -11,3 +11,12 @@ CMD command param1 param2 : Định nghĩa các câu lệnh được chạy sau 
 5. Build image PHP từ ubuntu 20.04 : https://congdonglinux.com/how-to-create-docker-images/
 6. Build context : Thư mục trên host chứa dockerfile gọi là build context. Khi build toán bộ các file/thư mục trong build context được send đến docker sever
 7. Dockerignore : Nó sẽ bỏ qua các thành phần không cần thiết được định nghĩa trong file vào image. Chỉ giữ lại các thành phần cần thiết -> giảm size
+*P2:
+ - touch Dockerfile
+ - docker images
+ - docker pull image:tag
+ - docker image rm imageName
+ - docker run -it --name Name -p 0000:0000 image bash
+ - 
+ - CTRL + P + Q         
+ - 
